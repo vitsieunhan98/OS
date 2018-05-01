@@ -18,24 +18,5 @@ public class Main {
                 women[i].start();
             }
         }
-
-//        for (int i = 1; i < Line.length(); i++) {
-//            if (Line.charAt(i) != Line.charAt(i - 1)) {
-//                if (Line.charAt(i) == 'M') {
-//                    try {
-//                        men[i].join();
-//                    } catch (InterruptedException ex) {
-//                        System.out.println("Error");
-//                    }
-//
-//                } else {
-//                    try {
-//                        women[i].join();
-//                    } catch (InterruptedException ex) {
-//                        System.out.println("Error");
-//                    }
-//                }
-//            }
-//        }
     }
 }
