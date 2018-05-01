@@ -7,7 +7,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class Bathroom {
     static int men, women;
-    public static final int CAPACITY = 2;
+    public static final int CAPACITY = 3;
     //Semaphore empty = new Semaphore(1);
     public Lock lock = new ReentrantLock();
     public int freeResources = CAPACITY;

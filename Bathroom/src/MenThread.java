@@ -1,8 +1,11 @@
+import java.util.Random;
+
 public class MenThread extends Thread {
     private static Bathroom b;
     private int id;
     private boolean canLeave;
     private boolean needBathroom;
+    Random rnd = new Random();
 
     public MenThread(int id, Bathroom b) {
         this.id = id;
@@ -17,7 +20,7 @@ public class MenThread extends Thread {
         	manEnter(id, b);
         	
         	try {
-                Thread.sleep(1000);
+                Thread.sleep(500*rnd.nextInt(2));
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
